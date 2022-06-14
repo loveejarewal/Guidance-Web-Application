@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map{
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+
+    </div>
+    <script>
+        function initMap(){
+            var location = {lat: -25.363, lng: 131.044}   
+            var map = new google.mps.Map(document.getElementById("map"), {
+                zoom: 4, 
+                center: location
+            });
+        }
+    </script>
+    
+</body>
+</html>
